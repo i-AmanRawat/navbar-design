@@ -31,7 +31,7 @@ import {
 // import { siteConfig } from "@/config";
 
 
-const components: { title: string; href: string; description: string }[] = [
+const components: { title: string;}[] = [
   {
     title: "24/7 Towing Service",
     // href: "/hotel-rudreshwar",
@@ -191,7 +191,7 @@ export default function Navbar({
               </SheetContent> */}
             {/* </Sheet> */}
         </div>
-        <div className>
+        <div >
           <Link href="/">
             <img
             src="/logo.png"
@@ -217,9 +217,9 @@ export default function Navbar({
                   <ListItem
                     key={component.title}
                     title={component.title}
-                    href={component.href}
+                    // href={component.href}
                   >
-                    {component.description}
+                    {/* {component.description} */}
                   </ListItem>
                 ))}
               </ul>
